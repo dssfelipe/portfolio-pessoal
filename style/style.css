@@ -1,0 +1,235 @@
+/* GENERAL STYLE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.616);
+    height: 100vh;
+
+    color: #ffffffa9;
+    font-family: "Raleway";
+    font-weight: 700;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.backgorund-top {
+    background-image: url(../img/portfo-bakcgorund-png.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 8vh;
+
+    background-image: linear-gradient(to bottom, #1d363656, transparent);
+
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.color-logo {
+    color: #21bba6;
+}
+
+header a {
+    color: #ffffffa9;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover {
+    color: #ffffff;
+    transform: scale(1.08);
+    transition: .3s;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+/* end-header */
+
+
+main {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-left: 15.2%;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation h1 {
+    font-size: 6em;
+}
+
+.presentation h2 {
+    font-size: 3em;
+    padding-bottom: 5%;
+}
+
+.presentation p {
+    font-size: 2em;
+    padding-top: 5%;
+}
+
+
+#typewrite {
+    font-size: 2em;
+    color: #21bba6;
+    min-height: 1.2em;
+}
+
+#typewrite::after {
+    content: '|';
+    color: white;
+    animation: blink 1s infinite ease-in-out;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+@keyframes border {
+    to{
+        border-right: 2px solid transparent;
+    }
+    from{
+        border-right: 2px solid white;
+    }
+}
+
+.presentation p span {
+    color: #136f63;
+    font-size: 2.5rem;
+}
+
+div#flex-btn {
+    display: flex;
+    gap: 10%;
+
+    padding-top: 5%;
+}
+
+button.btn-project {
+    background-color: #136f6373;
+    padding: 10px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+
+    color: #ffffffa9;
+    width: 200px;
+
+}
+
+.btn-project:hover {
+    background-color: #136f63;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+.btn-project p {
+    font-family: 'Poppins';
+    font-size: 1rem;
+    padding: 0;
+}
+
+.social ul{
+    padding-top: 30px;
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+
+}
+
+.social ul li a {
+    color: #B6D6CC;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.social ul li a:hover {
+    color: #21bba6;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.301);
+}
+
+.bi {
+    font-size: 40px;
+}
+
+/* end-presentation */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    color: #ffffff;
+    background-color: #030d0f;
+    color: #B6D6CC;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-right: 10%;
+}
+
+#about img {
+    width: 300px;
+    height: 300px;
+
+    border: 2px solid #21bba6;
+    border-radius:50%;
+}
+
+#about h2 {
+    font-size: 4em;
+    color: #21bba6;
+}
+
+#about p {
+    text-align: justify;
+    width: 500px;
+}
+/* end-about */
