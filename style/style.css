@@ -215,21 +215,58 @@ button.btn-project {
     padding-right: 10%;
 }
 
+div .ft-prof {
+    padding-right: 10%;
+}
+
 #about img {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
 
     border: 2px solid #21bba6;
     border-radius:50%;
+
+    position: relative;
+    animation: fly 2s ease-in-out infinite alternate;
+    box-shadow: 0 8px 24px 0 rgba(33, 187, 166, 0.25), 0 1.5px 6px 0 rgba(0,0,0,0.10);
+}
+
+#about img:hover {
+    box-shadow: 0 16px 32px 0 rgba(33, 187, 166, 0.35), 0 3px 12px 0 rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s;
+}
+
+@keyframes fly {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(30px);
+    }
+}
+
+.box-about {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 #about h2 {
     font-size: 4em;
     color: #21bba6;
+
+    padding-bottom: 5%;
 }
+
+
 
 #about p {
     text-align: justify;
-    width: 500px;
+    font-size: 16px;
+} 
+
+#about p strong {
+    color: #21bba6;
 }
-/* end-about */
+
