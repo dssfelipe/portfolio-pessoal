@@ -64,13 +64,94 @@ header a:hover {
     transition: .3s;
 }
 
+header.navbar a:hover {
+    color: #ffffff;
+    transform: scale(1.08);
+    transition: .3s;
+}
+
 nav ul {
     list-style: none;
 }
 
-nav ul li {
+nav.navbar ul li {
     display: inline-block;
     padding: 0 40px;
+}
+
+/* menu mobile */
+.btn-open-menu i{
+    color: #B6D6CC;
+    font-size: 40px;
+    padding: 20px 1%;
+    display: none;
+    justify-content: end;
+}
+
+.box-menu-mobile {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-menu-mobile .top-mobile a{
+    font-size: 1.5rem;
+}
+
+.menu-mobile {
+    background-color: black;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile.openMenu{
+    width: 70%;
+}
+
+.menu-mobile.openMenu ~ .overlay-menu{
+    display: block;
+}
+
+.menu-mobile .btn-close i {
+    color: #B6D6CC;
+    font-size: 30px;
+}
+
+.menu-mobile .btn-close {
+    padding: 20px 5%;
+}
+
+.menu-mobile nav ul {
+    text-align: right;
+}
+
+.menu-mobile nav ul li a {
+    color: #B6D6CC;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 5%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover {
+    background-color: #061a1f;
+}
+
+.overlay-menu {
+    background-color: rgba(0, 0, 0, 0.781);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
 }
 /* end-header */
 
@@ -467,6 +548,17 @@ div.title-contact {
     .social ul{
         padding-top: 50%;
     }
+
+    /* menu mobile */
+
+    .box-menu-mobile{
+        display: flex;
+    }
+
+    .btn-open-menu i{
+        display: flex;
+    }
+
 
     /* Section about */
     #about {
