@@ -173,14 +173,12 @@ main section {
 
 #about {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
     padding-right: 10%;
 }
 
 div .ft-prof {
     padding-right: 10%;
-}
+} 
 
 #about img {
     width: 400px;
@@ -209,10 +207,16 @@ div .ft-prof {
 }
 
 .box-about {
-    width: 800px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.text-about {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    width: 800px;
 }
 
 #about h2 {
@@ -221,8 +225,6 @@ div .ft-prof {
 
     padding-bottom: 5%;
 }
-
-
 
 #about p {
     text-align: justify;
@@ -427,6 +429,7 @@ div.title-contact {
 }
 /* end-contact */
 
+/* Screen Mobile */
 @media screen and (max-width: 1020px){
     /* Barra de navegação */
     .navbar{
@@ -469,8 +472,13 @@ div.title-contact {
     #about {
         flex-direction: column;
         height: auto;
-        gap: 40px;
         padding-right: 0px;
+    }
+
+    .box-about {
+        flex-direction: column;
+        align-items: center;
+        width: 350px;
     }
 
     div .ft-prof {
@@ -493,10 +501,6 @@ div.title-contact {
         }
     }
 
-    .box-about {
-        width: 350px;
-    }
-
     #about h2 {
         font-size: 2.5em;
         margin: auto;
@@ -505,6 +509,8 @@ div.title-contact {
     #about p {
         text-align: justify;
         font-size: 12px;
+        max-width: 330px;
+        margin: auto;
     } 
 
     /* Section Skills */
@@ -567,9 +573,83 @@ div.title-contact {
     #credits {
         padding-bottom: 10%;
     }
-
-
     }
+
+    @media screen and (max-width: 1440px){ 
+        /* main */
+    main {
+        padding-left: 10%;
+    }
+    
+    /* Section about */
+    #about img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .box-about {
+        padding-top: 5%;
+    }
+
+    .text-about {
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+    }
+
+    #about h2 {
+        font-size: 3.5em;
+        padding-bottom: 2.5%;
+    }
+
+    #about p {
+        text-align: justify;
+        font-size: 14px;
+        padding: 5px;
+    } 
+
+    /* Section Skills */
+    .title-skills h2 {
+        font-size: 3.5rem;
+    }
+
+    .container-skills ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    /* Section porjects */
+    #projects h2{
+        padding-top: 8%;
+        font-size: 3.5em;
+    }
+
+    div.container-grid {
+        gap: 10px;
+    }
+
+    .box-proportion {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* section contact */
+
+    div.title-contact {
+        padding-top: 5%;
+    }
+
+    .title-contact h2{
+        font-size: 3.5rem;
+    }
+
+    #credits {
+        padding-top: 10%;
+    }
+
+}
 
 
 
