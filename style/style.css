@@ -523,7 +523,6 @@ div.title-contact {
         justify-content: flex-start;
         flex-direction: column;
         padding-top: 25%;
-        padding-left: 10%;
     }
 
     main section {
@@ -570,17 +569,21 @@ div.title-contact {
     .box-about {
         flex-direction: column;
         align-items: center;
-        width: 350px;
+        width: 100%;
+        max-width: 350px;
     }
 
     div .ft-prof {
     padding-right: 0px;
     padding-top: 10%;
+    padding-bottom: 10%;
     }
 
     #about img {
-        width: 300px;
-        height: 300px;
+        width: 100%;
+        max-width: 300px;
+        height: 100%;
+        max-height: 300px;
     }
 
 
@@ -601,6 +604,7 @@ div.title-contact {
     #about p {
         text-align: justify;
         font-size: 12px;
+        width: 100%;
         max-width: 330px;
         margin: auto;
     } 
